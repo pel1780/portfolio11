@@ -1,3 +1,5 @@
+
+
 export const MVData = [
     { id: 1, tit: 'Memo Series', desc: '글을 넘어 당신다운 삶을 기록하세요.' },
     { id: 2, tit: 'SPACE PROJECT', desc: '우딕과 당신의 취향이 만나 특별한 공간을 만듭니다.' },
@@ -16,23 +18,10 @@ export const ItmData = [
     { id: 12, tit: `[woothic] Incense Gift Package`, desc: `우딕 인센스 기프트 패키지`, price: `84,000원 `, sale_price: `72,000원`, sale: `SALE`, cate: `OBJECT` },
     { id: 13, tit: `[woothic] Accessories display`, desc: `우딕 악세서리 진열대`, price: `56,000원`, sale_price: ``, cate: `OBJECT` },
 
-    { id: 31, tit: `DIVING INTO THE FOREST INCENSE`, desc: `다이빙 인투 더 포레스트 인센스`, price: `12,500원`, sale_price: `10,000원`, sale: `SALE`, cate: `INCENSE` },
-    { id: 32, tit: `MEMORABLE ROSE INCENSE`, desc: `메모러블 로즈 인센스`, price: `12,500원`, sale_price: `10,000원`, sale: `SALE`, cate: `INCENSE` },
-
-    { id: 11, tit: ``, desc: ``, price: ``, sale_price: ``, cate: `` },
-    { id: 11, tit: ``, desc: ``, price: ``, sale_price: ``, cate: `` },
-    { id: 11, tit: ``, desc: ``, price: ``, sale_price: ``, cate: `` },
+    { id: 21, tit: `DIVING INTO THE FOREST INCENSE`, desc: `다이빙 인투 더 포레스트 인센스`, price: `12,500원`, sale_price: `10,000원`, sale: `SALE`, cate: `INCENSE` },
+    { id: 22, tit: `MEMORABLE ROSE INCENSE`, desc: `메모러블 로즈 인센스`, price: `12,500원`, sale_price: `10,000원`, sale: `SALE`, cate: `INCENSE` },
 
 ]
-
-
-
-
-
-// sale 14, 15, 22, 31
-// memo 11, 12, 13, 2, 3
-// OBJECT 21, 22, 4
-// incense 4, 31
 
 
 

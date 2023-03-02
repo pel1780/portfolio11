@@ -1,8 +1,6 @@
 /* 웹폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap'); */
-/* icon */
-@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -28,8 +26,8 @@ img {
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    /* font-family: 'Noto Serif KR', serif; */
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Noto Serif KR', serif;
     line-height: 1;
     letter-spacing: -0.025em;
     /* letter-spacing: 자간을 조절해주는 명령어 */
@@ -42,4 +40,8 @@ address {
 
 button {
     font-family: 'Noto Serif KR', serif;
+}
+
+img {
+    width: 100%;
 }

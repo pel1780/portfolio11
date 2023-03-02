@@ -1,19 +1,32 @@
 import Slider from "react-slick";
 import styled from "styled-components";
 
-import bg01 from '../img/mainVisual_bg01.jpg';
-import bg02 from '../img/mainVisual_bg02.jpg';
-import bg03 from '../img/mainVisual_bg03.jpg';
-import bg04 from '../img/mainVisual_bg04.jpg';
-
 const MVisual = styled.section`
     position: relative;
     height: 100vh;
-    .itm{
+    .itm {
         position: relative;
         height: 100vh;
         color: #fff;
+        
         text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+
+        &.itm01 {
+            background: url(${process.env.PUBLIC_URL}/img/mainVisual_bg01.jpg) no-repeat  center center/cover;
+        }
+
+
+        &.itm02 {
+            background: url(${process.env.PUBLIC_URL}/img/mainVisual_bg02.jpg) no-repeat  center center/cover;
+        }
+
+        &.itm03 {
+            background: url(${process.env.PUBLIC_URL}/img/mainVisual_bg03.jpg) no-repeat  center center/cover;
+        }
+
+        &.itm04 {
+            background: url(${process.env.PUBLIC_URL}/img/mainVisual_bg04.jpg) no-repeat  center center/cover;
+        }
         .inner{
             position: absolute;
             top: 50%;
@@ -30,18 +43,7 @@ const MVisual = styled.section`
             }
         }
     }
-    .itm01{
-        background: url(${bg01}) no-repeat fixed center center/cover;
-    }
-    .itm02{
-        background: url(${bg02}) no-repeat fixed center center/cover;
-    }
-    .itm03{
-        background: url(${bg03}) no-repeat fixed center center/cover;
-    }
-    .itm04{
-        background: url(${bg04}) no-repeat fixed center center/cover;
-    }
+
     .scroll_down{
         position: absolute;
         bottom: 50px;
@@ -51,11 +53,20 @@ const MVisual = styled.section`
     }
 `
 
-
 export const MainVisual = ({ Slider, MVData }) => {
+    const option = {
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        fade: true
+    }
     return (
         <MVisual>
-            <Slider arrows={false}>
+            <Slider {...option}>
                 {
                     MVData.map((it, idx) => {
                         return (

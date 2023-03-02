@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://pel1780.github.io/portfolio11",
   "dependencies": {
-    "@noonnu/noto-serif-kr": "^0.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
