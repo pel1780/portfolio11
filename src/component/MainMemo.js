@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const MMemo = styled.section`
@@ -74,14 +75,16 @@ export const MainMemo = ({ ItmData }) => {
                         console.log(it.id)
                         return (
                             <li key={it.id}>
-                                {it.sale && <div>{it.sale}</div>}
-                                <figure>
-                                    <img src={process.env.PUBLIC_URL + `/img/itm_${it.id <= 9 ? '0' + it.id : it.id}.jpg`} alt="" />
-                                </figure>
-                                <strong>{it.tit}</strong>
-                                <p>{it.desc}</p>
-                                {it.sale_price && <em>{it.sale_price}</em>}
-                                <span className={it.sale_price ? null : 'price'}>{it.price}</span>
+                                <Link to='/'>
+                                    {it.sale && <div>{it.sale}</div>}
+                                    <figure>
+                                        <img src={process.env.PUBLIC_URL + `/img/itm_${it.id <= 9 ? '0' + it.id : it.id}.jpg`} alt="" />
+                                    </figure>
+                                    <strong>{it.tit}</strong>
+                                    <p>{it.desc}</p>
+                                    {it.sale_price && <em>{it.sale_price}</em>}
+                                    <span className={it.sale_price ? null : 'price'}>{it.price}</span>
+                                </Link>
                             </li>
                         )
                     })

@@ -1,4 +1,4 @@
-import '@noonnu/noto-serif-kr';
+
 import './css/common.css';
 import './css/basic.css';
 import styled from 'styled-components';
@@ -14,7 +14,7 @@ import Slider from "react-slick";
 import { MVData, ItmData } from './data/data';
 
 const Wrap = styled.div`
-  font-family: NotoSerifKR;
+
 `
 
 function App() {

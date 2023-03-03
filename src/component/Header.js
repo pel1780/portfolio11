@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Head = styled.header`
     position: fixed;
@@ -74,17 +75,17 @@ export const Header = () => {
             <div className="btm inner flex">
                 <nav className="gnb">
                     <ul className="flex">
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">SHOP</a></li>
-                        <li><a href="">COMMUNITY</a></li>
-                        <li><a href="">SPACE</a></li>
-                        <li><a href="">REVIEW</a></li>
+                        <li><Link to='/'>ABOUT</Link></li>
+                        <li><Link to='/'>SHOP</Link></li>
+                        <li><Link to='/'>COMMUNITY</Link></li>
+                        <li><Link to='/'>SPACE</Link></li>
+                        <li><Link to='/'>REVIEW</Link></li>
                     </ul>
                 </nav>
                 <ul className="icon flex">
-                    <li><a href=""><i><AiOutlineSearch /></i></a></li>
-                    <li><a href=""><i><AiOutlineShoppingCart /></i></a></li>
-                    <li><a href=""><i><AiOutlineUser /></i></a></li>
+                    <li><Link to='/'><i><AiOutlineSearch /></i></Link></li>
+                    <li><Link to='/'><i><AiOutlineShoppingCart /></i></Link></li>
+                    <li><Link to='/'><i><AiOutlineUser /></i></Link></li>
                 </ul>
             </div>
 

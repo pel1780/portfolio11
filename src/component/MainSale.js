@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 const MSale = styled.section`
@@ -60,13 +61,15 @@ export const MainSale = ({ ItmData }) => {
                         console.log(it.id)
                         return (
                             <li key={it.id}>
-                                <div>{it.sale}</div>
-                                <figure>
-                                    <img src={process.env.PUBLIC_URL + `/img/itm_${it.id <= 9 ? '0' + it.id : it.id}.jpg`} alt="" />
-                                </figure>
-                                <strong>{it.tit}</strong>
-                                <p>{it.desc}</p>
-                                <span>{it.sale_price}<em>{it.price}</em></span>
+                                <Link to='/'>
+                                    <div>{it.sale}</div>
+                                    <figure>
+                                        <img src={process.env.PUBLIC_URL + `/img/itm_${it.id <= 9 ? '0' + it.id : it.id}.jpg`} alt="" />
+                                    </figure>
+                                    <strong>{it.tit}</strong>
+                                    <p>{it.desc}</p>
+                                    <span>{it.sale_price}<em>{it.price}</em></span>
+                                </Link>
                             </li>
                         )
                     })
