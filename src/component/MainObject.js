@@ -70,7 +70,7 @@ export const MainObject = ({ ItmData }) => {
                 <p>기억 속 자연을 일상에서 만나보세요.</p>
                 <ul>{
                     Objectlist.map(it => {
-                        console.log(it.id)
+                        // console.log(it.id)
                         return (
                             <li key={it.id}>
                                 <Link to='/'>

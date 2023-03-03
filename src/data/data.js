@@ -23,6 +23,17 @@ export const ItmData = [
 
 ]
 
+export const FootData = {
+    comName: 'Company Name : 우딕스튜디오',
+    owner: 'Owner : LEE KYUNG TAEK',
+    manager: 'Personal Info Manager : LEE KYUNG TAEK',
+    tel: 'Phone Number : 070 - 8018 - 9106',
+    email: 'Email : woothic@gmail.com',
+    address: 'Address : 66-21, Nusan-ro 38beon-gil, Yangchon-eup, Gimpo-si, Gyeonggi-do',
+    BusinessTel: 'Business Registration Number : 519-19-01238',
+    Business: 'Business License: 2021-경기김포-0782'
+}
+
 
 
 

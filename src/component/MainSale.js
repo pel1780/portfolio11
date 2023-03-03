@@ -58,7 +58,7 @@ export const MainSale = ({ ItmData }) => {
                 <h2>지금 가장 인기있는 상품을 먼저 살펴보세요.</h2>
                 <ul>{
                     Salelist.slice(2, 6).map(it => {
-                        console.log(it.id)
+                        // console.log(it.id)
                         return (
                             <li key={it.id}>
                                 <Link to='/'>
