@@ -53,7 +53,7 @@ const MVisual = styled.section`
     }
 `
 
-export const MainVisual = ({ Slider, MVData }) => {
+export const MainVisual = ({ Slider, MVData = [] }) => {
     const option = {
         dots: false,
         arrows: false,

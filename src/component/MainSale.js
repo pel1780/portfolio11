@@ -50,7 +50,7 @@ const MSale = styled.section`
         }
     }
 `
-export const MainSale = ({ ItmData }) => {
+export const MainSale = ({ ItmData = [] }) => {
     const Salelist = ItmData.filter(it => it.sale)
     return (
         <MSale className="sec">

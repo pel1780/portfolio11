@@ -61,8 +61,8 @@ const MObject = styled.section`
     }
 `
 
-export const MainObject = ({ ItmData }) => {
-    const Objectlist = ItmData.filter(it => it.cate == 'OBJECT');
+export const MainObject = ({ ItmData = [] }) => {
+    const Objectlist = ItmData.filter(it => it.cate.includes('OBJECT'));
     return (
         <MObject className="sec">
             <div className="inner">

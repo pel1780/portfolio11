@@ -23,8 +23,7 @@ address{
 }
 `
 
-export const Footer = ({ FootData }) => {
-    console.log(Object.values(FootData))
+export const Footer = ({ FootData = [] }) => {
     const newArry = Object.values(FootData);
 
     return (
