@@ -31,12 +31,12 @@ export const Footer = ({ FootData = [] }) => {
             <div className="inner">
                 <ul className="top flex">
                     {
-                        newArry.slice(0, 5).map(it => <li>{it}</li>)
+                        newArry.slice(0, 5).map((it, idx) => <li key={idx}>{it}</li>)
                     }
                 </ul>
                 <ul className="btm flex">
                     {
-                        newArry.slice(5, 8).map(it => <li>{it}</li>)
+                        newArry.slice(5, 8).map((it, idx) => <li key={idx}>{it}</li>)
                     }
                 </ul>
                 <address>&copy; 2021 woothic. All rights reserved.</address>

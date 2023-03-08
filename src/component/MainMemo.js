@@ -72,7 +72,7 @@ export const MainMemo = ({ ItmData = [] }) => {
                 <p>오랫동안 당신의 기록을 소중히 보관해보세요.</p>
                 <ul>{
                     Memolist.map(it => {
-                        console.log(it.id)
+                        // console.log(it.id)
                         return (
                             <li key={it.id}>
                                 <Link to='/'>

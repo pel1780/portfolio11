@@ -15,6 +15,7 @@ import Slider from "react-slick";
 // import { MVData, ItmData, FootData } from './data/data';
 import { ToTop } from './component/ToTop';
 import { useState, useEffect } from 'react';
+import { MainIncense } from './component/MainIncense';
 
 const Wrap = styled.div`
   position: relative;
@@ -24,13 +25,13 @@ function App() {
   const [itm, setItm] = useState([]);
   const getItm = async () => {
     const itms = await fetch('https://pel1780.github.io/data/data/data.json').then(r => r.json());
-    console.log(itms.ItmData);
+    // console.log(itms.ItmData);
     setItm(itms);
   }
   useEffect(() => {
     getItm()
   }, []);
-  console.log(itm);
+  // console.log(itm);
   return (
     <Wrap>
       <Header />
@@ -39,6 +40,7 @@ function App() {
         <MainSale ItmData={itm.ItmData} />
         <MainMemo ItmData={itm.ItmData} />
         <MainObject ItmData={itm.ItmData} />
+        <MainIncense ItmData={itm.ItmData} />
       </main>
       <Footer FootData={itm.FootData} />
       <ToTop />
